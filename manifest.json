@@ -1,0 +1,9 @@
+{
+  "id": "wispvale-action-notes",
+  "name": "WispVale Action Notes",
+  "version": "0.1.3",
+  "minAppVersion": "1.1.0",
+  "description": "Append a personal text note to a precisely identified action in the native reading view.",
+  "author": "WispVale",
+  "isDesktopOnly": false
+}

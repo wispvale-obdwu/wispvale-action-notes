@@ -1,2 +1,39 @@
-# wispvale-action-notes
-Discreet task notes for the native reading view in WispVale action dashboards
+# WispVale Action Notes
+
+为 WispVale 行动看板的原生阅读视图添加低调的任务备注入口。
+
+## 手机安装
+
+通过 Obsidian 的 BRAT 插件安装，无需在手机文件管理器中寻找隐藏目录。
+
+1. 在 BRAT 中选择添加测试插件（Add beta plugin）。
+2. 填入仓库：`wispvale-obdwu/wispvale-action-notes`。
+3. 选择固定版本 `0.1.3`，完成安装后启用 **WispVale Action Notes**。
+4. 打开每日行动看板的原生阅读视图，点任务右侧的小备注图标。
+
+已装过本插件时保持同一插件 ID，已有备注仍是 Markdown 正文，不需要迁移。
+
+## 以后更新
+
+在 BRAT 已有的本插件条目中点编辑，选择新版本并更新；无需卸载或手工替换文件。固定版本不会自动跟随后续版本，版本发布后再按说明选择即可。
+
+更新前先保存或取消正在输入的备注。更新后在社区插件中核对版本号，再重新打开看板。需要回退时，在同一 BRAT 条目选择旧版本；回退插件不会撤销已经写入的备注。
+
+## 使用范围
+
+- `Wiki/行动管理/每日行动看板.md`
+- `Wiki/行动管理/待办积压库.md`
+
+只为上述页面中可准确定位的原生顶层任务提供入口，包括已完成任务。查询结果、嵌入、引用、嵌套任务和专项归档控件不在范围内。
+
+电脑上，鼠标悬停或键盘聚焦任务时显示图标；手机显示小型灰色图标。添加的纯文字保存在该任务的“我的备注”折叠区，不改变任务勾选、日期或原有备注。若原文在编辑期间变化，插件会拒绝冲突写入并保留输入供复制。
+
+## 发布文件与隐私
+
+BRAT 下载 Release 中的 `manifest.json`、`main.js` 和 `styles.css`。备注处理代码已包含在 `main.js` 内，不依赖额外的本地模块文件。
+
+本仓库只提供插件代码及说明，不包含笔记内容、任务数据、图片、凭据或 Vault 配置。插件本身不发送网络请求，不上传备注。
+
+桌面原生阅读、连续任务、同名任务、页面重绘和滚动加载已验证；手机实际安装与触屏体验仍需在使用设备上确认。
+
+BRAT 的安装及更新机制见[官方开发指南](https://github.com/TfTHacker/obsidian42-brat/blob/main/BRAT-DEVELOPER-GUIDE.md)。

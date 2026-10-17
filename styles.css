@@ -1,0 +1,49 @@
+.markdown-preview-view .wispvale-note-enabled { position: relative; }
+/* The dashboard owns a more specific task padding shorthand; reserve only our button edge. */
+.markdown-preview-view.wispvale-action-list .markdown-preview-sizer li.task-list-item.wispvale-note-enabled {
+  padding-inline-end: 46px !important;
+  min-height: 44px !important;
+  box-sizing: border-box;
+}
+.markdown-preview-view button.wispvale-task-note-button {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 0;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+.markdown-preview-view button.wispvale-task-note-button .svg-icon { width: 16px; height: 16px; }
+.markdown-preview-view .wispvale-note-enabled:hover > .wispvale-task-note-button,
+.markdown-preview-view .wispvale-note-enabled:focus-within > .wispvale-task-note-button,
+.markdown-preview-view button.wispvale-task-note-button:focus-visible { opacity: 1; }
+.markdown-preview-view button.wispvale-task-note-button:hover { background: var(--background-modifier-hover); }
+.markdown-preview-view button.wispvale-task-note-button:focus-visible {
+  outline: 2px solid var(--text-normal);
+  outline-offset: 1px;
+}
+@media (hover: none), (pointer: coarse) {
+  .markdown-preview-view button.wispvale-task-note-button { opacity: 1; }
+}
+.is-mobile .markdown-preview-view button.wispvale-task-note-button { opacity: 1; }
+.wispvale-note-modal { max-width: 560px; }
+.wispvale-note-modal .wispvale-note-task-title { font-weight: 600; overflow-wrap: anywhere; }
+.wispvale-note-modal .wispvale-note-hint { color: var(--text-muted); }
+.wispvale-note-modal .wispvale-note-label { display: block; margin-block: 16px 8px; }
+.wispvale-note-modal .wispvale-note-input { display: block; width: 100%; min-height: 150px; resize: vertical; }
+.wispvale-note-modal .wispvale-note-error { color: var(--text-error); min-height: 1.5em; }
+.wispvale-note-modal .wispvale-note-actions { display: flex; justify-content: flex-end; gap: 12px; }
+.wispvale-note-modal .wispvale-note-actions button { min-height: 44px; }
